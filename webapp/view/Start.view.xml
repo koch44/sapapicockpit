@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com_msh_int.INT_DEMO_REG_1.controller.Start" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content><Text xmlns="sap.m" text="Bitte geben Sie im unteren Eingabefeld Ihre MSH-E-Mail Adresse ein, Sie erhalten dann die entsprechenden Daten per Mail zugesandt." id="text2"/>
+					    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+					        <sap.ui.layout.form:formContainers>
+					            <sap.ui.layout.form:FormContainer id="container0">
+					                <sap.ui.layout.form:formElements><sap.ui.layout.form:FormElement label="MSH-Adresse" id="element0">
+					                        <sap.ui.layout.form:fields>
+					                            <Input width="100%" id="regmail" change="_check_mail_input"/>
+					                        </sap.ui.layout.form:fields>
+					                    </sap.ui.layout.form:FormElement>
+					                </sap.ui.layout.form:formElements>
+					            </sap.ui.layout.form:FormContainer>
+					        </sap.ui.layout.form:formContainers>
+					        <sap.ui.layout.form:layout>
+					            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+					        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+					    <Button xmlns="sap.m" text="Zugangsdaten anfordern" id="regbut" press="register" icon="sap-icon://account"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
